@@ -52,14 +52,19 @@ export default function HomePage() {
 
             {/* CTA Row */}
             <div className="flex items-center gap-4 mb-6">
-              <button className="bg-white text-black px-10 py-2.5 rounded-md text-[14px] font-medium">
+              <button className="bg-white text-black px-10 py-2.5 rounded-md text-[17px] font-medium">
                 Let’s Connect
               </button>
 
               {/* Play Button */}
               <button className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white">
-                <span className="w-9 h-9 rounded-full bg-black flex items-center justify-center text-white text-xs">
-                  ▶
+                <span className="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white text-2xl">
+                  <svg
+                   viewBox="0 0 24 24"
+                   className="w-6 h-6 fill-white ml-[2px]"
+                   >
+                   <polygon points="5,3 19,12 5,21" />
+                  </svg>
                 </span>
               </button>
             </div>
@@ -73,7 +78,7 @@ export default function HomePage() {
 
           {/* RIGHT BUTTON — ALIGNED WITH LAST TEXT LINE */}
           <div className="pb-[6px]">
-            <button className="bg-[#4285F4] text-white px-6 py-3 rounded-lg text-[14px] font-medium shadow-lg hover:bg-[#3367D6] transition">
+            <button className="bg-[#4285F4] text-white px-6 py-3 rounded-lg text-[17px] font-medium shadow-lg hover:bg-[#3367D6] transition">
               Join Community
             </button>
           </div>
