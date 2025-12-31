@@ -63,10 +63,10 @@ const Navbar = () => {
                         transition={{ duration: 0.3 }}
                         className="flex flex-col whitespace-nowrap overflow-hidden"
                     >
-                        <span className="text-lg leading-tight text-white font-medium">
+                        <span className="text-xl leading-tight text-white ">
                             Google Developer Groups
                         </span>
-                        <span className="text-xs text-gray-200">
+                        <span className="text-s text-gray-200">
                             On Campus • Netaji Subhas University Of Technology
                         </span>
                     </motion.div>
@@ -74,7 +74,7 @@ const Navbar = () => {
 
                 {/* Right Section: Links */}
                 <motion.div
-                    className="flex items-center gap-8 text-lg text-white whitespace-nowrap shrink-0 pl-4"
+                    className="flex items-center gap-8 text-xl text-white whitespace-nowrap shrink-0 pl-4"
                 >
                     <Link href="/events" className="hover:text-blue-300 transition-colors">Events</Link>
                     <Link href="/feed" className="hover:text-blue-300 transition-colors">Feed</Link>

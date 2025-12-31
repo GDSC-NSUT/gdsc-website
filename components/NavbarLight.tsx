@@ -25,7 +25,7 @@ const NavbarLight = () => {
         <div className="flex items-center gap-4">
           
           {/* Logo */}
-          <div className="relative h-10 w-10 shrink-0">
+          <div className="relative h-11 w-11 shrink-0">
             <Image 
               src="/logo.svg" 
               alt="GDG Logo" 
@@ -37,10 +37,10 @@ const NavbarLight = () => {
 
           {!isCompactRoute && (
             <div className="flex flex-col">
-              <span className="text-lg font-medium leading-tight text-neutral-900">
+              <span className="text-xl font-medium leading-tight text-neutral-900">
                 Google Developer Groups
               </span>
-              <span className="text-xs text-neutral-600">
+              <span className="text-s text-neutral-600">
                 On Campus • Netaji Subhas University Of Technology
               </span>
             </div>
@@ -48,7 +48,7 @@ const NavbarLight = () => {
         </div>
 
         {/* Right Section: Links */}
-        <div className="flex items-center gap-8 text-sm font-medium text-neutral-900">
+        <div className="flex items-center gap-8 text-xl font-medium text-neutral-900">
           <Link href="/events" className="hover:text-blue-600 transition-colors">
             Events
           </Link>
