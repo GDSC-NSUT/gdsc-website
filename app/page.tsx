@@ -41,7 +41,7 @@ export default function HomePage() {
             />
 
             {/* Heading */}
-            <h1 className="text-4xl sm:text-5xl leading-tight font-semibold tracking-tight mb-3">
+            <h1 className="text-4xl sm:text-5xl leading-tight font-medium tracking-tight mb-3">
               Google Developer Groups
             </h1>
 
