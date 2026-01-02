@@ -26,7 +26,7 @@ export default function HomePage() {
 
       {/* Content */}
       <section className="relative flex min-h-screen items-center px-6 md:px-16">
-        <div className="max-w-6xl w-full text-white flex items-end justify-between">
+        <div className="max-w-6xl w-full text-white flex flex-col md:flex-row md:items-end md:justify-between gap-10">
           
           {/* LEFT CONTENT */}
           <div className="max-w-xl">
@@ -41,44 +41,67 @@ export default function HomePage() {
             />
 
             {/* Heading */}
-            <h1 className="text-[48px] leading-[1.15] font-semibold tracking-[-0.5px] mb-3">
+            <h1 className="text-4xl sm:text-5xl leading-tight font-semibold tracking-tight mb-3">
               Google Developer Groups
             </h1>
 
             {/* Subheading */}
-            <p className="text-[18px] mb-6">
+            <p className="text-base sm:text-lg mb-6">
               On Campus · Netaji Subhas University Of Technology
             </p>
 
             {/* CTA Row */}
             <div className="flex items-center gap-4 mb-6">
-              <button className="bg-white text-black px-10 py-2.5 rounded-md text-[17px] font-medium">
+              {/* Let’s Connect */}
+              <button
+               className="
+               bg-white text-black
+               px-8 sm:px-10 py-2.5
+               rounded-md
+               text-base sm:text-lg md:text-xl
+
+               transition-all duration-200 ease-out
+               hover:-translate-y-[1px]
+               hover:shadow-[0_6px_18px_rgba(0,0,0,0.15)]
+               hover:scale-[1.02]
+
+               active:translate-y-0
+               active:scale-[0.98]
+               "
+               >
                 Let’s Connect
               </button>
 
               {/* Play Button */}
-              <button className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white">
-                <span className="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white text-2xl">
-                  <svg
-                   viewBox="0 0 24 24"
-                   className="w-6 h-6 fill-white ml-[2px]"
-                   >
-                   <polygon points="5,3 19,12 5,21" />
-                  </svg>
-                </span>
+              <button
+                className="
+                  flex items-center justify-center
+                  w-10 h-10 sm:w-12 sm:h-12
+                  rounded-full
+                  bg-white
+                  transition-transform duration-200
+                  hover:scale-105 active:scale-95
+                "
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  className="w-10 h-10 sm:w-8 sm:h-8 fill-black translate-x-[-1px]"
+                >
+                  <path d="M8 5.14v13.72c0 .97 1.05 1.57 1.9 1.06l10.3-6.86c.8-.53.8-1.6 0-2.12L9.9 4.08c-.85-.51-1.9.09-1.9 1.06z" />
+                </svg>
               </button>
             </div>
 
             {/* Description */}
-            <p className="text-[18px] leading-[1.6] max-w-xl">
+            <p className="text-base sm:text-lg leading-relaxed max-w-xl">
               At GDG NSUT, we aim to learn, teach and grow. Together. The place
               where creative minds come together to build something amazing.
             </p>
           </div>
 
-          {/* RIGHT BUTTON — ALIGNED WITH LAST TEXT LINE */}
-          <div className="pb-[6px]">
-            <button className="bg-[#4285F4] text-white px-6 py-3 rounded-lg text-[17px] font-medium shadow-lg hover:bg-[#3367D6] transition">
+          {/* RIGHT BUTTON */}
+          <div className="md:pb-[6px]">
+            <button className="bg-[#4285F4] text-white px-6 py-3 rounded-lg text-sm sm:text-base font-medium shadow-lg hover:bg-[#3367D6] transition">
               Join Community
             </button>
           </div>
