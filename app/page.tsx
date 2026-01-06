@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const heroImages = [
@@ -11,20 +12,35 @@ const heroImages = [
 
 export default function HomePage() {
   const [currentImage, setCurrentImage] = useState(0);
+  const [fade, setFade] = useState(true);
 
+  // Auto carousel
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+      triggerImageChange((currentImage + 1) % heroImages.length);
     }, 3500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [currentImage]);
+
+  // Smooth transition handler
+  const triggerImageChange = (index: number) => {
+    setFade(false);
+    setTimeout(() => {
+      setCurrentImage(index);
+      setFade(true);
+    }, 300);
+  };
 
   return (
     <main className="relative min-h-screen overflow-hidden">
-      {/* Background + Gradient */}
+      {/* Background */}
       <div
-        className="absolute inset-0 -z-10 transition-all duration-700"
+        className={`
+          absolute inset-0 -z-10
+          transition-all duration-700 ease-in-out
+          ${fade ? "opacity-100 scale-100" : "opacity-0 scale-105"}
+        `}
         style={{
           backgroundImage: `
             linear-gradient(
@@ -47,21 +63,20 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center px-6 md:px-16">
         <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row lg:items-end lg:justify-between gap-12 text-white">
 
-          {/* LEFT CONTENT */}
+          {/* LEFT */}
           <div className="max-w-xl">
-
             {/* Logo */}
             <Image
               src="/gdg-logo.svg"
               alt="GDG Logo"
               width={44}
               height={44}
-              className="h-10 w-auto mb-6 mix-blend-lighten"
+              className="h-10 w-auto mb-6"
               priority
             />
 
             {/* Heading */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl leading-tight font-medium tracking-tight mb-3">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-medium leading-tight mb-3">
               Google Developer Groups
             </h1>
 
@@ -70,28 +85,34 @@ export default function HomePage() {
               On Campus · Netaji Subhas University Of Technology
             </p>
 
-            {/* CTA Row */}
+            {/* CTA ROW */}
             <div className="flex items-center gap-4 mb-6">
 
-              {/* Let’s Connect */}
-              <button
-                className="
-                  bg-white text-black
-                  px-8 py-2.5
-                  rounded-md
-                  text-base font-medium
-                  transition-all duration-200 ease-out
-                  hover:-translate-y-[1px]
-                  hover:shadow-[0_6px_18px_rgba(0,0,0,0.15)]
-                  hover:scale-[1.02]
-                  active:scale-[0.98]
-                "
-              >
-                Let’s Connect
-              </button>
+              {/* Let’s Connect → Contact Page */}
+              <Link href="/contact">
+                <button
+                  className="
+                    bg-white text-black
+                    px-8 py-2.5
+                    rounded-md
+                    text-base font-medium
+                    transition-all duration-200
+                    hover:-translate-y-[1px]
+                    hover:shadow-lg
+                    active:scale-95
+                  "
+                >
+                  Let’s Connect
+                </button>
+              </Link>
 
-              {/* Play Button */}
+              {/* Play Button → Instant Image Change */}
               <button
+                onClick={() =>
+                  triggerImageChange(
+                    (currentImage + 1) % heroImages.length
+                  )
+                }
                 className="
                   flex items-center justify-center
                   w-12 h-12
@@ -100,7 +121,6 @@ export default function HomePage() {
                   shadow-md
                   transition-all duration-200
                   hover:scale-110
-                  hover:shadow-lg
                   active:scale-95
                 "
               >
@@ -115,27 +135,28 @@ export default function HomePage() {
 
             {/* Description */}
             <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-md opacity-95">
-              At GDG NSUT, we aim to learn, teach and grow. Together.
-              The place where creative minds come together to build something amazing.
+              At GDG NSUT, we aim to learn, teach and grow together.
+              A place where creative minds build impactful technology.
             </p>
           </div>
 
           {/* RIGHT CTA */}
           <div className="self-start lg:self-end">
-            <button className="
-              bg-[#4285F4] text-white
-              px-4 py-2
-              rounded-md
-              text-sm sm:text-base font-medium
-              shadow-lg
-              hover:bg-[#3367D6]
-              hover:shadow-xl
-              transition-all
-            ">
+            <button
+              className="
+                bg-[#4285F4] text-white
+                px-4 py-2
+                rounded-md
+                text-sm sm:text-base font-medium
+                shadow-lg
+                hover:bg-[#3367D6]
+                hover:shadow-xl
+                transition-all
+              "
+            >
               Join Community
             </button>
           </div>
-
         </div>
       </section>
     </main>
