@@ -14,8 +14,14 @@ const NavbarLight = () => {
 
   return (
     <>
+      {/* UPDATED NAV:
+        1. Changed 'fixed' to 'sticky' so it pushes content down.
+        2. Added 'top-4' so it has a gap when stuck.
+        3. Added 'mx-auto' and 'mt-8' for centering and initial top spacing.
+        4. Removed 'left-1/2 -translate-x-1/2' (no longer needed for sticky).
+      */}
       <nav 
-        className={`hidden md:flex fixed top-11.5 left-1/2 -translate-x-1/2 z-50 items-center justify-between 
+        className={`hidden md:flex sticky top-4 z-50 mx-auto mt-8 items-center justify-between 
         rounded-[50px] border border-white/20 bg-[#E3E3E3]/50 backdrop-blur-xl shadow-lg 
         px-6 py-3 transition-all duration-300
         ${isCompactRoute ? 'w-fit gap-6' : 'w-[95%] max-w-292.5'}
