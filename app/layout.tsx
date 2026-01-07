@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import { Fragment_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+<<<<<<< HEAD
 import Footer from "./components/footer";
 import NavbarManager from "@/components/NavbarManager";
+=======
+import NavbarManager from "@/components/NavbarManager";
+import Footer from "./components/footer";
+>>>>>>> cbb819a6a661fe4ca2f943d95f8aad144beb021f
 
 const neueMontreal = localFont({
   variable: "--font-neue-montreal",
