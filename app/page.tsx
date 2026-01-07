@@ -139,24 +139,6 @@ export default function HomePage() {
               A place where creative minds build impactful technology.
             </p>
           </div>
-
-          {/* RIGHT CTA */}
-          <div className="self-start lg:self-end">
-            <button
-              className="
-                bg-[#4285F4] text-white
-                px-4 py-2
-                rounded-md
-                text-sm sm:text-base font-medium
-                shadow-lg
-                hover:bg-[#3367D6]
-                hover:shadow-xl
-                transition-all
-              "
-            >
-              Join Community
-            </button>
-          </div>
         </div>
       </section>
     </main>
