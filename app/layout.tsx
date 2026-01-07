@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fragment_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import Footer from "./components/footer";
 import NavbarManager from "@/components/NavbarManager";
 
 const neueMontreal = localFont({
@@ -72,6 +73,7 @@ export default function RootLayout({
       >
         <NavbarManager />
         {children}
+        <Footer />
       </body>
     </html>
   );
