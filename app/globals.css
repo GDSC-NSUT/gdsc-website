@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+@keyframes fast-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-hover-loop {
+  animation: fast-spin 0.5s linear infinite;
 }
 
 @theme inline {
@@ -39,7 +49,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #F2F2F2;
     --foreground: #ededed;
   }
 }
