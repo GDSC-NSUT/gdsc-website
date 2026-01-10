@@ -44,7 +44,7 @@ const Navbar = () => {
                         }}
                     >
                         <Image
-                            src="/logo.svg"
+                            src={`/logo.svg`}
                             alt="GDG Logo"
                             fill
                             className="object-contain"

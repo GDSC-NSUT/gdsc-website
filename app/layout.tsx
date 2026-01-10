@@ -4,7 +4,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import UnifiedNavbar from "@/components/UnifiedNavbar";
 import Footer from "@/components/footer";
-// import NavbarManager from "@/components/NavbarManager";
+import { cn } from "@/libs/utils";
 
 const neueMontreal = localFont({
   variable: "--font-neue-montreal",
@@ -70,7 +70,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fragmentMono.variable} ${neueMontreal.variable} ${productSans.variable} antialiased`}
+        className={cn(
+          fragmentMono.variable,
+          neueMontreal.variable,
+          productSans.variable,
+          "antialiased"
+        )}
       >
         <UnifiedNavbar />
         {/* <NavbarManager /> */}

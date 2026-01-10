@@ -6,17 +6,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ASSET_PATHS } from '@/libs/utils';
+// import { ASSET_PATHS } from '@/libs/utils';
 
 const heroImages = [
-  "/home/hero-1.jpg",
-  "/home/hero-2.jpg",
-  "/home/hero-3.jpg",
-  "/home/hero-4.jpg",
-  "/home/hero-5.jpg",
-  "/home/hero-6.jpg",
-  "/home/hero-7.jpg",
-  "/home/hero-8.jpg",
-  "/home/hero-9.jpg",
+  `${ASSET_PATHS.HOME}/hero-1.jpg`,
+  `${ASSET_PATHS.HOME}/hero-2.jpg`,
+  `${ASSET_PATHS.HOME}/hero-3.jpg`,
+  `${ASSET_PATHS.HOME}/hero-4.jpg`,
+  `${ASSET_PATHS.HOME}/hero-5.jpg`,
+  `${ASSET_PATHS.HOME}/hero-6.jpg`,
+  `${ASSET_PATHS.HOME}/hero-7.jpg`,
+  `${ASSET_PATHS.HOME}/hero-8.jpg`,
+  `${ASSET_PATHS.HOME}/hero-9.jpg`,
 ];
 
 export default function HomePage() {
@@ -37,11 +39,9 @@ export default function HomePage() {
 
   return (
     <main className="relative min-h-screen overflow-hidden">
-      <section className="relative h-[90vh] flex items-center px-6 md:px-16">
-        {/* Black background base layer */}
+      <section className="relative h-[85vh] flex items-center px-6 md:px-16">
         <div className="absolute inset-0 -z-20 bg-black" />
         
-        {/* Background Images with AnimatePresence */}
         <AnimatePresence initial={false}>
           <motion.div
             key={currentImage}
@@ -71,12 +71,12 @@ export default function HomePage() {
 
         {/* Content */}
 
-        <div className="max-w-7xl w-full mx-auto flex flex-col lg:flex-row lg:items-end lg:justify-between gap-12 text-white">
+        <div className="max-w-7xl pt-14 w-full mx-auto flex flex-col lg:flex-row lg:items-end lg:justify-between gap-12 text-white">
           {/* LEFT */}
           <div className="max-w-xl">
             {/* Logo */}
             <Image
-              src="/gdg-logo.svg"
+              src={`/gdg-logo.svg`}
               alt="GDG Logo"
               width={44}
               height={44}

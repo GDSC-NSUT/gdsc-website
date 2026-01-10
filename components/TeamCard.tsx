@@ -1,5 +1,6 @@
 "use client";
 import { Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 interface TeamCardProps {
   name: string;
@@ -25,10 +26,13 @@ export default function TeamCard({ name, role, imageSrc, linkedinUrl }: TeamCard
 
         {/* Profile Image */}
         <div className="absolute inset-1.5 rounded-full overflow-hidden bg-white z-10">
-          <img 
+          <Image 
             src={imageSrc} 
             alt={name} 
-            className="w-full h-full object-cover group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
+            // width={320}
+            // height={320}
+            fill
+            className=" object-cover group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
           />
         </div>
 

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Menu } from 'lucide-react';
+import { cn } from '@/libs/utils';
 
 const NavbarLight = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,11 +22,12 @@ const NavbarLight = () => {
         4. Removed 'left-1/2 -translate-x-1/2' (no longer needed for sticky).
       */}
       <nav 
-        className={`hidden md:flex sticky top-4 z-50 mx-auto mt-8 items-center justify-between 
-        rounded-[50px] border border-white/20 bg-[#E3E3E3]/50 backdrop-blur-xl shadow-lg 
-        px-6 py-3 transition-all duration-300
-        ${isCompactRoute ? 'w-fit gap-6' : 'w-[95%] max-w-292.5'}
-        `}
+        className={cn(
+          "hidden md:flex sticky top-4 z-50 mx-auto mt-8 items-center justify-between",
+          "rounded-[50px] border border-white/20 bg-[#E3E3E3]/50 backdrop-blur-xl shadow-lg",
+          "px-6 py-3 transition-all duration-300",
+          isCompactRoute ? "w-fit gap-6" : "w-[95%] max-w-292.5"
+        )}
       >
         {/* Left Section */}
         <div className="flex items-center gap-4">
@@ -33,7 +35,7 @@ const NavbarLight = () => {
           {/* Logo */}
           <div className="relative h-11 w-11 shrink-0">
             <Image 
-              src="/logo.svg" 
+              src={`/logo.svg`} 
               alt="GDG Logo" 
               fill 
               className="object-contain"

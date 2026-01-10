@@ -4,6 +4,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { DiscordIcon, GitHubIcon, InstagramIcon, LinkedInIcon } from "./icons";
 import XIcon from "./icons/XIcon";
+import { cn } from '@/libs/utils';
 
 function SocialIcons({ variant }: { variant: "home" | "contact" }) {
   const dimension = {
@@ -87,7 +88,7 @@ export default function Footer() {
       <div className="font-product-sans font-medium md:hidden bg-[#1D1D1D] text-white px-6 py-5">
         <div className="flex flex-col gap-6">
           <Image
-            src="/logo.svg"
+            src={`/logo.svg`}
             alt="GDG Logo"
             width={logoSize.width}
             height={logoSize.height}
@@ -112,28 +113,31 @@ export default function Footer() {
 
       {/* ================= DESKTOP FOOTER ================= */}
       <div
-        className={`font-product-sans font-medium hidden md:block ${
+        className={cn(
+          "font-product-sans font-medium hidden md:block",
           isContact
             ? "bg-white text-black"
             : isHome
             ? "bg-[#1D1D1D] text-white"
             : "bg-text-black text-white"
-        }`}
+        )}
       >
         {isContact && <div className="w-[95%] h-px bg-gray-500 mx-auto" />}
         <div
-          className={`mx-auto ${
+          className={cn(
+            "mx-auto flex items-center justify-between",
             isContact ? "px-16 py-5" : isHome ? "px-12 py-10" : "px-12 py-5"
-          } flex items-center justify-between`}
+          )}
         >
           {/* LEFT */}
           <div
-            className={`flex gap-4 ${
+            className={cn(
+              "flex gap-4",
               isHome ? "flex-col items-start" : "flex-row items-center"
-            }`}
+            )}
           >
             <Image
-              src="/logo.svg"
+              src={`/logo.svg`}
               alt="GDG Logo"
               width={logoSize.width}
               height={logoSize.height}
@@ -141,16 +145,18 @@ export default function Footer() {
 
             <div>
               <h2
-                className={`${
+                className={cn(
+                  "text-white-500",
                   isHome ? "text-[30px]" : "text-[25px]"
-                } text-white-500`}
+                )}
               >
                 Google Developer Groups
               </h2>
               <p
-                className={`${
+                className={cn(
+                  "text-white-400",
                   isHome ? "text-[20px]" : "text-[15px]"
-                } text-white-400`}
+                )}
               >
                 On Campus · Netaji Subhas University Of Technology
               </p>

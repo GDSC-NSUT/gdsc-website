@@ -1,4 +1,5 @@
 import { Linkedin } from 'lucide-react';
+import Image from 'next/image';
 
 interface TeamCardProps {
   name: string;
@@ -25,10 +26,11 @@ export default function Card({ name, imageSrc, linkedinUrl, tintColor }: TeamCar
 
         {/* Profile Image */}
         <div className="absolute inset-1.5 rounded-full overflow-hidden bg-white z-10">
-          <img 
-            src={imageSrc} 
+          <Image 
+            src={imageSrc}
             alt={name} 
-            className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110"
+            fill
+            className="object-cover transition-all duration-500 group-hover:scale-110"
           />
           <div 
             className="absolute inset-0 opacity-20 group-hover:opacity-0 transition-opacity duration-500"

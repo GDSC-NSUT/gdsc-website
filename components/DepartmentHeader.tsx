@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {DgreenStarIcon} from '@/components/icons';
+import Image from 'next/image';
 
 interface DepartmentHeaderProps {
   title: string;

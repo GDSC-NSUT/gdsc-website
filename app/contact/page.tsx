@@ -7,7 +7,7 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <div className=" flex  justify-between lg:px-20 px-10 md:py-10 pt-6 pb-0">
+      <div className="flex justify-between lg:px-20 px-10 md:py-10 pt-6 pb-0">
         <div>
           <PageHero
             title="Let's make"

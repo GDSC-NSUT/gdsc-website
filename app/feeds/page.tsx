@@ -1,5 +1,7 @@
 import { PageHero, SearchInput } from "@/components/events";
 import { SearchIcon, DropdownIcon } from "@/components/icons";
+import Image from 'next/image';
+import { ASSET_PATHS } from '@/libs/utils';
 
 export default function Feed() {
   const links = [
@@ -102,9 +104,11 @@ export default function Feed() {
                   hover:shadow-[0_8px_30px_rgba(66,133,244,0.35)]
                 "
               >
-                <img
-                  src="/feeds/grid.png"
+                <Image
+                  src={`${ASSET_PATHS.FEEDS}/grid.png`}
                   alt="Event"
+                  width={400}
+                  height={400}
                   className="h-full w-full object-cover"
                 />
               </div>
