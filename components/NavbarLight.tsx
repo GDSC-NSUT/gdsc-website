@@ -10,7 +10,7 @@ const NavbarLight = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isCompactRoute = ['/events', '/feed', '/about'].includes(pathname);
+  const isCompactRoute = ['/events', '/feeds', '/team'].includes(pathname);
 
   return (
     <>
@@ -55,13 +55,16 @@ const NavbarLight = () => {
 
         {/* Right Section: Links */}
         <div className="flex items-center gap-8 text-xl font-medium text-neutral-900">
+          <Link href="/" className="hover:text-blue-600 transition-colors">
+            Home
+          </Link>
           <Link href="/events" className="hover:text-blue-600 transition-colors">
             Events
           </Link>
-          <Link href="/feed" className="hover:text-blue-600 transition-colors">
+          <Link href="/feeds" className="hover:text-blue-600 transition-colors">
             Feed
           </Link>
-          <Link href="/about" className="hover:text-blue-600 transition-colors">
+          <Link href="/team" className="hover:text-blue-600 transition-colors">
             About Team
           </Link>
           <Link href="/contact" className="hover:text-blue-600 transition-colors">
@@ -88,9 +91,10 @@ const NavbarLight = () => {
             onClick={(e) => e.stopPropagation()}
             className="w-48 flex flex-col gap-2 rounded-2xl border border-white/20 bg-[#E3E3E3]/60 backdrop-blur-xl p-4 shadow-2xl"
           >
+            <Link href="/" className="block rounded-lg px-4 py-2 text-neutral-900 hover:bg-black/5">Home</Link>
             <Link href="/events" className="block rounded-lg px-4 py-2 text-neutral-900 hover:bg-black/5">Events</Link>
-            <Link href="/feed" className="block rounded-lg px-4 py-2 text-neutral-900 hover:bg-black/5">Feed</Link>
-            <Link href="/about" className="block rounded-lg px-4 py-2 text-neutral-900 hover:bg-black/5">About Team</Link>
+            <Link href="/feeds" className="block rounded-lg px-4 py-2 text-neutral-900 hover:bg-black/5">Feed</Link>
+            <Link href="/team" className="block rounded-lg px-4 py-2 text-neutral-900 hover:bg-black/5">About Team</Link>
             <Link href="/contact" className="block rounded-lg px-4 py-2 text-neutral-900 hover:bg-black/5">Contact Us</Link>
           </div>
         </div>

@@ -8,15 +8,15 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const heroImages = [
-  "/home/hero-1.jpg",
-  "/home/hero-2.jpg",
-  "/home/hero-3.jpg",
-  "/home/hero-4.jpg",
-  "/home/hero-5.jpg",
-  "/home/hero-6.jpg",
-  "/home/hero-7.jpg",
-  "/home/hero-8.jpg",
-  "/home/hero-9.jpg",
+  "/home-images/20251104_124503.jpg",
+  "/home-images/IMG_20250912_113740.jpg",
+  "/home-images/20251104_130253.jpg",
+  "/home-images/IMG_20250912_132401.jpg",
+  "/home-images/IMG_20250912_115546.jpg",
+  "/home-images/IMG_9913.jpg",
+  "/home-images/IMG_20250912_144009.jpg",
+  "/home-images/20251104_121151.jpg",
+  "/home-images/20250912_172305.jpg",
 ];
 
 export default function HomePage() {

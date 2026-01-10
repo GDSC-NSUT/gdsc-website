@@ -16,7 +16,7 @@ export default function SectionLabel({ title, color }: SectionLabelProps) {
 
     return (
         <div className={`${colorMap[color]} flex-none rounded-l-2xl flex items-center justify-center shadow-lg w-16 md:w-18 xl:w-24 h-40 md:h-60 xl:h-85 m-10 mx-0`}>
-            <div className="rotate-[-90deg] flex flex-col items-center leading-none">
+            <div className="-rotate-90 flex flex-col items-center leading-none">
                 {words.map((word, index) => (
                     <span
                         key={index}

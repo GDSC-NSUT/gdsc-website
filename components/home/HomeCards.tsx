@@ -1,11 +1,11 @@
-import Image1 from "@/public/images/home-22.svg";
-import Star from "@/public/images/home-23.svg";
-import Cloud from "@/public/images/home-24.svg";
-import Image2 from "@/public/images/home-25.svg";
-import Image3 from "@/public/images/home-26.svg";
-import Image4 from "@/public/images/home-27.svg";
-import Image5 from "@/public/images/home-28.svg";
-import Cloud2 from "@/public/images/home-29.svg";
+import Image1 from "@/public/home/home-22.svg";
+import Star from "@/public/home/home-23.svg";
+import Cloud from "@/public/home/home-24.svg";
+import Image2 from "@/public/home/home-25.svg";
+import Image3 from "@/public/home/home-26.svg";
+import Image4 from "@/public/home/home-27.svg";
+import Image5 from "@/public/home/home-28.svg";
+import Cloud2 from "@/public/home/home-29.svg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -60,7 +60,7 @@ const HomeCards = () => {
             }}
           >
             <div
-              className={`shadow-[0px_4px_30px_5px_#0000004D] z-3 ml-7 lg:ml-20 rounded-[25px] lg:rounded-[40px] relative flex justify-center items-center lg:block min-h-60 lg:h-[60vh] w-[80vw] lg:w-[60vw] mx-auto bg-[url('/images/home-21.png')] bg-cover bg-center overflow-hidden`}
+              className={`shadow-[0px_4px_30px_5px_#0000004D] z-3 ml-7 lg:ml-20 rounded-[25px] lg:rounded-[40px] relative flex justify-center items-center lg:block min-h-60 lg:h-[60vh] w-[80vw] lg:w-[60vw] mx-auto bg-[url('/home/home-21.png')] bg-cover bg-center overflow-hidden`}
             >
               <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/40 to-black/0" />
               <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-black/0" />
@@ -125,7 +125,7 @@ const HomeCards = () => {
             }}
           >
             <div
-              className={`text-right shadow-[0px_4px_30px_5px_#0000004D] z-4 rounded-[25px] lg:rounded-[40px] relative flex justify-center items-center lg:block min-h-60 lg:h-[60vh] mr-7 w-[80vw] lg:w-[60vw] lg:mr-20 bg-[url('/images/home-21.png')] bg-cover bg-center overflow-hidden`}
+              className={`text-right shadow-[0px_4px_30px_5px_#0000004D] z-4 rounded-[25px] lg:rounded-[40px] relative flex justify-center items-center lg:block min-h-60 lg:h-[60vh] mr-7 w-[80vw] lg:w-[60vw] lg:mr-20 bg-[url('/home/home-21.png')] bg-cover bg-center overflow-hidden`}
             >
               <div className="absolute inset-0 bg-linear-to-l from-black/90 via-black/40 to-black/0" />
               <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-black/0" />
@@ -189,7 +189,7 @@ const HomeCards = () => {
             }}
           >
             <div
-              className={`shadow-[0px_4px_30px_5px_#0000004D] z-4 ml-7 lg:ml-20 rounded-[25px] lg:rounded-[40px] relative flex justify-center items-center lg:block min-h-60 lg:h-[60vh] w-[80vw] lg:w-[60vw] mx-auto bg-[url('/images/home-21.png')] bg-cover bg-center overflow-hidden`}
+              className={`shadow-[0px_4px_30px_5px_#0000004D] z-4 ml-7 lg:ml-20 rounded-[25px] lg:rounded-[40px] relative flex justify-center items-center lg:block min-h-60 lg:h-[60vh] w-[80vw] lg:w-[60vw] mx-auto bg-[url('/home/home-21.png')] bg-cover bg-center overflow-hidden`}
             >
               <div className="absolute inset-0 bg-linear-to-r from-black/90 via-black/40 to-black/0" />
               <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-black/0" />

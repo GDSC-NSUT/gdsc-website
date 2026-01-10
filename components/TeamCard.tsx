@@ -10,7 +10,7 @@ interface TeamCardProps {
 
 export default function TeamCard({ name, role, imageSrc, linkedinUrl }: TeamCardProps) {
   return (
-    <div className="flex flex-col items-center group w-full max-w-[200px]">
+    <div className="flex flex-col items-center group w-full max-w-50">
       <div className="relative w-40 h-43 md:w-60 md:h-64 xl:w-80 xl:h-85 mb-4 flex items-center justify-center">
         
         {/* Hover Loop Border */}
@@ -24,7 +24,7 @@ export default function TeamCard({ name, role, imageSrc, linkedinUrl }: TeamCard
         </div>
 
         {/* Profile Image */}
-        <div className="absolute inset-[6px] rounded-full overflow-hidden bg-white z-10">
+        <div className="absolute inset-1.5 rounded-full overflow-hidden bg-white z-10">
           <img 
             src={imageSrc} 
             alt={name} 
@@ -36,15 +36,15 @@ export default function TeamCard({ name, role, imageSrc, linkedinUrl }: TeamCard
         <a 
           href={linkedinUrl}
           target="_blank"
-          className="absolute bottom-2 right-2 bg-[#FBBC04] p-4 rounded-full border-2 border-white shadow-lg z-20 scale-0 group-hover:scale-100 transition-transform duration-300 hover:bg-[#f4b400]"
+          className="absolute bottom-2 right-2 bg-primary-yellow p-4 rounded-full border-2 border-white shadow-lg z-20 scale-0 group-hover:scale-100 transition-transform duration-300 hover:bg-[#f4b400]"
         >
           <Linkedin size={25} fill="black" strokeWidth={0} />
         </a>
       </div>
 
       <div className="text-center text-nowrap">
-        <h3 className="text-[#3C4043] font-bold text-3xl font-[family-name:var(--font-product-sans)]">{name}</h3>
-        <p className="text-[#70757A] text-3xl uppercase ">{role}</p>
+        <h3 className="text-[#3C4043] font-bold text-2xl sm:text-3xl font-product-sans">{name}</h3>
+        <p className="text-[#70757A] text-xl sm:text-2xl uppercase ">{role}</p>
       </div>
     </div>
   );
