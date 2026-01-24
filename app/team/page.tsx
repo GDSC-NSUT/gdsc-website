@@ -27,16 +27,19 @@ const MEMBERS = membersData as Member[];
 
 export default function TeamPage() {
   // Use useMemo to process data only once
-  const { presidents, vicePresidents, generalSecretaries, departments } = useMemo(() => {
+  const { facultyInCharge, presidents, vicePresidents, generalSecretaries, departments } = useMemo(() => {
 
     // Normalizing strings for comparison
     const normalize = (s: string) => s.trim().toLowerCase();
 
+    const facultyInCharge = MEMBERS.filter(
+      m => m.corePosition && normalize(m.corePosition) === 'faculty in charge'
+    );
     const presidents = MEMBERS.filter(m => m.corePosition && normalize(m.corePosition) === 'president');
     const vicePresidents = MEMBERS.filter(m => m.corePosition && normalize(m.corePosition) === 'vice president');
     const generalSecretaries = MEMBERS.filter(m => m.corePosition && normalize(m.corePosition) === 'general secretary');
     const featuredRolls = new Set([
-      ...presidents, ...vicePresidents, ...generalSecretaries
+      ...facultyInCharge, ...presidents, ...vicePresidents, ...generalSecretaries
     ].map(m => m.rollNumber));
 
     // 2. Department Grouping
@@ -77,6 +80,7 @@ export default function TeamPage() {
     const sortedDeptKeys = Object.keys(deptMap).sort();
 
     return {
+      facultyInCharge,
       presidents,
       vicePresidents,
       generalSecretaries,
@@ -101,6 +105,24 @@ export default function TeamPage() {
           </p>
           <p className='text-text-light-gray text-sm'>-John C. Maxwell</p>
         </header>
+
+         {/* Faculty In Charge SECTION (FIC Data) */}
+         {facultyInCharge.length > 0 && (
+          <section className="w-full lg:mb-16 flex items-center">
+            <SectionLabel title="F.I.C" color="green" />
+            <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
+              {facultyInCharge.map((member, idx) => (
+                <Card
+                  key={idx}
+                  name={member.name}
+                  imageSrc={`/${member.image}`}
+                  tintColor="green"
+                  linkedinUrl={member.linkedin}
+                />
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* PRESIDENTS SECTION */}
         {presidents.length > 0 && (
