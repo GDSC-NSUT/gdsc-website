@@ -109,7 +109,7 @@ export default function TeamPage() {
          {/* Faculty In Charge SECTION (FIC Data) */}
          {facultyInCharge.length > 0 && (
           <section className="w-full lg:mb-16 flex items-center">
-            <SectionLabel title="F.I.C" color="green" />
+            <SectionLabel title="F.I.C." color="green" />
             <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
               {facultyInCharge.map((member, idx) => (
                 <Card
@@ -127,7 +127,7 @@ export default function TeamPage() {
         {/* PRESIDENTS SECTION */}
         {presidents.length > 0 && (
           <section className="w-full lg:mb-16 flex items-center">
-            <SectionLabel title="PRESIDENT" color="blue" />
+            <SectionLabel title="PRESIDENTS" color="blue" />
             <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
               {presidents.map((member, idx) => (
                 <Card
@@ -145,7 +145,7 @@ export default function TeamPage() {
         {/* VICE PRESIDENTS SECTION */}
         {vicePresidents.length > 0 && (
           <section className="w-full lg:mb-16 flex items-center">
-            <SectionLabel title="VICE PRESIDENT" color="yellow" />
+            <SectionLabel title="VICE PRESIDENTS" color="yellow" />
             <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
               {vicePresidents.map((member, idx) => (
                 <Card
@@ -163,7 +163,7 @@ export default function TeamPage() {
         {/* GENERAL SECRETARY SECTION */}
         {generalSecretaries.length > 0 && (
           <section className="w-full mb-16 flex items-center">
-            <SectionLabel title="GENERAL SECRETARY" color="red" />
+            <SectionLabel title="GENERAL SECRETARIES" color="red" />
             <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
               {generalSecretaries.map((member, idx) => (
                 <Card
