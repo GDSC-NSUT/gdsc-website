@@ -57,9 +57,19 @@ const fragmentMono = Fragment_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GDG - NSUT",
+  title: "Google Developer Groups | Netaji Subhas University",
   description:
-    "Google Developer Group at Netaji Subhas University of Technology",
+    "Google Developer Groups, Netaji Subhas University of Technology - Empowering Students Through Technology and Collaboration. Join our community to learn, build, and innovate.",
+  openGraph: {
+    title: "Google Developer Groups | Netaji Subhas University",
+    description:
+      "Google Developer Groups, Netaji Subhas University of Technology - Empowering Students Through Technology and Collaboration. Join our community to learn, build, and innovate.",
+    images: [
+      {
+        url: "/og.png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

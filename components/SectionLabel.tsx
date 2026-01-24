@@ -4,13 +4,14 @@ import { cn } from "@/libs/utils";
 
 interface SectionLabelProps {
     title: string;
-    color: "blue" | "yellow" | "red";
+    color: "blue" | "yellow" | "red" | "green";
 }
 
 const colorMap = {
     blue: "bg-[#4285F4]",
     yellow: "bg-[#FBBC04]",
     red: "bg-[#EA4335]",
+    green: "bg-[#0F9D58]",
 };
 
 export default function SectionLabel({ title, color }: SectionLabelProps) {
