@@ -71,7 +71,7 @@ const UnifiedNavbar = () => {
           overflow: isCollapsed ? "visible" : "hidden",
         }}
         className={cn(
-          "hidden min-[820px]:flex min-h-19.5 items-center rounded-[50px] border backdrop-blur-xl shadow-lg antialiased justify-between px-6 py-2",
+          "hidden min-[820px]:flex min-h-19.5 items-center rounded-[50px] border backdrop-blur-xl shadow-lg antialiased px-6 py-2 relative",
           styles.navbar,
           styles.navBg,
           isHomePage && styles.dark,
@@ -80,7 +80,7 @@ const UnifiedNavbar = () => {
             : "sticky z-50 mx-auto mt-8 top-[25px]"
         )}
       >
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 absolute left-6">
           <motion.div
             className="relative shrink-0"
             initial={false}
@@ -116,19 +116,21 @@ const UnifiedNavbar = () => {
             }}
             className="flex-col whitespace-nowrap overflow-hidden"
           >
-            <span className={cn("text-lg 2xl:text-xl leading-tight", styles.textColor)}>
+            <span className={cn("text-lg leading-tight", styles.textColor)}>
               Google Developer Groups
             </span>
-            <span className={cn("text-sm 2xl:text-base", styles.subText)}>
+            <span className={cn("text-sm ", styles.subText)}>
               On Campus • Netaji Subhas University Of Technology
             </span>
           </motion.div>
         </div>
 
-        <div className={cn(
-          "flex items-center gap-4 2xl:gap-6 text-lg 2xl:text-xl whitespace-nowrap shrink-0",
-          styles.textColor
-        )}>
+        <div 
+          className={cn(
+            "flex items-center gap-4 text-lg whitespace-nowrap absolute right-6",
+            styles.textColor
+          )}
+        >
           <NavLink href="/">Home</NavLink>
           <NavLink href="/events">Events</NavLink>
           <NavLink href="/feeds">Feed</NavLink>
