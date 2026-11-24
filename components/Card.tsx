@@ -42,9 +42,9 @@ export default function Card({ name, imageSrc, linkedinUrl, githubUrl }: TeamCar
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`${name} on GitHub`}
-            className="absolute bottom-2 left-2 flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-[#181717] text-white border-2 border-white shadow-lg z-30 scale-0 group-hover:scale-100 transition-transform duration-300 hover:bg-black"
+            className="absolute bottom-2 left-2 flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 xl:w-10 xl:h-10 rounded-full bg-[#181717] text-white border-2 border-white shadow-lg z-30 transition-transform duration-300 [@media(hover:hover)]:scale-0 [@media(hover:hover)]:group-hover:scale-100 focus-visible:scale-100 hover:bg-black"
           >
-            <GitHubIcon className="w-5 h-5 sm:w-6 sm:h-6" />
+            <GitHubIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 xl:w-5 xl:h-5" />
           </a>
         )}
         {linkedinUrl && (
@@ -53,9 +53,9 @@ export default function Card({ name, imageSrc, linkedinUrl, githubUrl }: TeamCar
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`${name} on LinkedIn`}
-            className="absolute bottom-2 right-2 flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-[#0A66C2] text-white border-2 border-white shadow-lg z-30 scale-0 group-hover:scale-100 transition-transform duration-300 hover:bg-[#004182]"
+            className="absolute bottom-2 right-2 flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 xl:w-10 xl:h-10 rounded-full bg-[#0A66C2] text-white border-2 border-white shadow-lg z-30 transition-transform duration-300 [@media(hover:hover)]:scale-0 [@media(hover:hover)]:group-hover:scale-100 focus-visible:scale-100 hover:bg-[#004182]"
           >
-            <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" fill="white" strokeWidth={0} />
+            <Linkedin className="w-3.5 h-3.5 sm:w-4 sm:h-4 xl:w-5 xl:h-5" fill="white" strokeWidth={0} />
           </a>
         )}
       </div>
