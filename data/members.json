@@ -350,7 +350,7 @@
     "image": "teams/Aaryan_Vinod_Kumar.jpg"
   },
   {
-    "timestamp": "",
+    "timestamp": "11/24/2026 15:47:24",
     "name": "Adya Srivastava",
     "department": "Production",
     "position": "Core",
@@ -358,9 +358,9 @@
     "rollNumber": "2024UBD9704",
     "nsutEmail": "adya.srivastava.des24@nsut.ac.in",
     "personalEmail": "adyasrivastavaa@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/adya-srivastava-950b6b352",
+    "linkedin": "https://www.linkedin.com/in/adyasrivastavaa",
     "github": "",
-    "bio": "Constantly learning and trying to apply that learning!",
+    "bio": "I like to think I’m passionate and I hate to realize I’m lazy.",
     "image": "teams/Adya_Srivastava.jpg"
   },
   {
@@ -1776,5 +1776,19 @@
     "github": "https://github.com/ImpacTusdevloper",
     "bio": "I make games in Unity and C#, and I build my own assets in Blender and GIMP. I've started around 30 projects and finished a handful, which are up on itch.io. Most of my work is gameplay mechanics and small prototypes.",
     "image": "teams/Krish_Kushwaha.jpg"
+  },
+  {
+    "timestamp": "11/24/2026 16:05:38",
+    "name": "Dhruv Kataria",
+    "department": "Production",
+    "position": "Mentor",
+    "corePosition": "",
+    "rollNumber": "2025UIC3548",
+    "nsutEmail": "dhruv.kataria.ug25@nsut.ac.in",
+    "personalEmail": "dhruvkataria1@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/dhruv-kataria-050210374",
+    "github": "",
+    "bio": "Hey! I am Dhruv. I also go by \"kojo\". I love exploring new things and trying different experiences. I am into gaming, F1, badminton etc and I enjoy a good conversation, a little chaos and making memories along the way!",
+    "image": "teams/Dhruv_Kataria.jpg"
   }
 ]
