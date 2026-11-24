@@ -1,14 +1,15 @@
 import { Linkedin } from 'lucide-react';
 import Image from 'next/image';
+import { GitHubIcon } from '@/components/icons';
 
 interface TeamCardProps {
   name: string;
   imageSrc: string;
-  linkedinUrl: string;
-  tintColor: string;
+  linkedinUrl?: string;
+  githubUrl?: string;
 }
 
-export default function Card({ name, imageSrc, linkedinUrl, tintColor }: TeamCardProps) {
+export default function Card({ name, imageSrc, linkedinUrl, githubUrl }: TeamCardProps) {
   return (
     <div className="flex flex-col items-center group">
       <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-80 xl:h-80 flex items-center justify-center">
@@ -32,21 +33,31 @@ export default function Card({ name, imageSrc, linkedinUrl, tintColor }: TeamCar
             fill
             className="object-cover transition-all duration-500 group-hover:scale-110"
           />
-          <div
-            className="absolute inset-0 opacity-20 group-hover:opacity-0 transition-opacity duration-500"
-            style={{ backgroundColor: tintColor }}
-          />
         </div>
 
-        {/* LinkedIn Button */}
-        <a
-          href={linkedinUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="absolute bottom-2 right-2 bg-primary-yellow p-1 md:p-4 rounded-full border-2 border-white shadow-lg z-30 scale-0 group-hover:scale-100 transition-transform duration-300 hover:bg-[#f4b400]"
-        >
-          <Linkedin size={20} fill="black" strokeWidth={0} />
-        </a>
+        {/* Social buttons (only rendered when a link exists) */}
+        {githubUrl && (
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${name} on GitHub`}
+            className="absolute bottom-2 left-2 flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-[#181717] text-white border-2 border-white shadow-lg z-30 hover:scale-110 transition-transform duration-300 hover:bg-black"
+          >
+            <GitHubIcon className="w-5 h-5 sm:w-6 sm:h-6" />
+          </a>
+        )}
+        {linkedinUrl && (
+          <a
+            href={linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${name} on LinkedIn`}
+            className="absolute bottom-2 right-2 flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-[#0A66C2] text-white border-2 border-white shadow-lg z-30 hover:scale-110 transition-transform duration-300 hover:bg-[#004182]"
+          >
+            <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" fill="white" strokeWidth={0} />
+          </a>
+        )}
       </div>
 
       <div className="text-center z-10">

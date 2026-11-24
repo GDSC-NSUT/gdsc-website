@@ -27,7 +27,7 @@ const MEMBERS = membersData as Member[];
 
 export default function TeamPage() {
   // Use useMemo to process data only once
-  const { facultyInCharge, presidents, vicePresidents, generalSecretaries, departments } = useMemo(() => {
+  const { facultyInCharge, presidents, vicePresidents, generalSecretaries, jointGeneralSecretaries, departments } = useMemo(() => {
 
     // Normalizing strings for comparison
     const normalize = (s: string) => s.trim().toLowerCase();
@@ -38,16 +38,18 @@ export default function TeamPage() {
     const presidents = MEMBERS.filter(m => m.corePosition && normalize(m.corePosition) === 'president');
     const vicePresidents = MEMBERS.filter(m => m.corePosition && normalize(m.corePosition) === 'vice president');
     const generalSecretaries = MEMBERS.filter(m => m.corePosition && normalize(m.corePosition) === 'general secretary');
-    const featuredRolls = new Set([
-      ...facultyInCharge, ...presidents, ...vicePresidents, ...generalSecretaries
-    ].map(m => m.rollNumber));
+    const jointGeneralSecretaries = MEMBERS.filter(m => m.corePosition && normalize(m.corePosition) === 'joint general secretary');
+    // Track featured members by identity (roll numbers are not guaranteed unique/present)
+    const featured = new Set<Member>([
+      ...facultyInCharge, ...presidents, ...vicePresidents, ...generalSecretaries, ...jointGeneralSecretaries
+    ]);
 
     // 2. Department Grouping
     const deptMap: Record<string, Member[]> = {};
 
     MEMBERS.forEach(member => {
       // Skip if already visually featured at top
-      if (featuredRolls.has(member.rollNumber)) return;
+      if (featured.has(member)) return;
 
       const dept = member.department ? member.department.trim() : 'Other';
       if (!deptMap[dept]) {
@@ -84,13 +86,14 @@ export default function TeamPage() {
       presidents,
       vicePresidents,
       generalSecretaries,
+      jointGeneralSecretaries,
       departments: sortedDeptKeys.map(key => ({ name: key, members: deptMap[key] }))
     };
   }, []);
 
   return (
-    <main className="min-h-screen bg-white relative overflow-x-hidden pb-20 ">
-      <img src='backg.png' className='absolute translate-y-60 -translate-x-10 w-[400%] h-[14%] lg:h-[20%] xl:h-[25%] pointer-events-none select-none' alt="background" />
+    <main className="min-h-screen bg-white relative isolate overflow-x-hidden pb-20">
+      <div aria-hidden="true" className="pointer-events-none select-none absolute inset-0 -z-10 bg-[url('/backg.png')] bg-repeat-y bg-top bg-[length:300%_auto] md:bg-[length:160%_auto] lg:bg-[length:100%_auto]" />
       <div className="m-5 sm:px-6 lg:px-8">
         {/* HEADER SECTION */}
         <header className="md:my-10 mb-10 mt-6">
@@ -116,8 +119,8 @@ export default function TeamPage() {
                   key={idx}
                   name={member.name}
                   imageSrc={`/${member.image}`}
-                  tintColor="green"
-                  linkedinUrl={member.linkedin}
+                  linkedinUrl={member.linkedin || undefined}
+                  githubUrl={member.github || undefined}
                 />
               ))}
             </div>
@@ -134,8 +137,8 @@ export default function TeamPage() {
                   key={idx}
                   name={member.name}
                   imageSrc={`/${member.image}`}
-                  tintColor='blue'
-                  linkedinUrl={member.linkedin}
+                  linkedinUrl={member.linkedin || undefined}
+                  githubUrl={member.github || undefined}
                 />
               ))}
             </div>
@@ -152,8 +155,8 @@ export default function TeamPage() {
                   key={idx}
                   name={member.name}
                   imageSrc={`/${member.image}`}
-                  tintColor='yellow'
-                  linkedinUrl={member.linkedin}
+                  linkedinUrl={member.linkedin || undefined}
+                  githubUrl={member.github || undefined}
                 />
               ))}
             </div>
@@ -162,7 +165,7 @@ export default function TeamPage() {
 
         {/* GENERAL SECRETARY SECTION */}
         {generalSecretaries.length > 0 && (
-          <section className="w-full mb-16 flex items-center">
+          <section className="w-full lg:mb-16 flex items-center">
             <SectionLabel title="GENERAL SECRETARIES" color="red" />
             <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
               {generalSecretaries.map((member, idx) => (
@@ -170,8 +173,26 @@ export default function TeamPage() {
                   key={idx}
                   name={member.name}
                   imageSrc={`/${member.image}`}
-                  tintColor='red'
-                  linkedinUrl={member.linkedin}
+                  linkedinUrl={member.linkedin || undefined}
+                  githubUrl={member.github || undefined}
+                />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* JOINT GENERAL SECRETARY SECTION */}
+        {jointGeneralSecretaries.length > 0 && (
+          <section className="w-full mb-16 flex items-center">
+            <SectionLabel title="JOINT SECRETARIES" color="green" />
+            <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 justify-items-center">
+              {jointGeneralSecretaries.map((member, idx) => (
+                <Card
+                  key={idx}
+                  name={member.name}
+                  imageSrc={`/${member.image}`}
+                  linkedinUrl={member.linkedin || undefined}
+                  githubUrl={member.github || undefined}
                 />
               ))}
             </div>
@@ -203,7 +224,8 @@ export default function TeamPage() {
                   name={member.name}
                   role={member.corePosition || member.position}
                   imageSrc={`/${member.image}`}
-                  linkedinUrl={member.linkedin}
+                  linkedinUrl={member.linkedin || undefined}
+                  githubUrl={member.github || undefined}
                 />
               ))}
             </div>

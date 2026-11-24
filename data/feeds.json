@@ -1,6 +1,90 @@
 {
     "feeds": [
         {
+            "id": 18,
+            "link": "https://www.instagram.com/p/Dft1PW7yci_/",
+            "image": "/feeds/ig-Dft1PW7yci_.jpg",
+            "alt": "MEGHMANTHAN 2026: Registrations are NOW OPEN!",
+            "category": "Announcements"
+        },
+        {
+            "id": 17,
+            "link": "https://www.instagram.com/p/DfmXoIsJYKg/",
+            "image": "/feeds/ig-DfmXoIsJYKg.jpg",
+            "alt": "The show is over, but the lore will live forever.✨🎀",
+            "category": "Announcements"
+        },
+        {
+            "id": 16,
+            "link": "https://www.instagram.com/p/Dfg8qIzBAaM/",
+            "image": "/feeds/ig-Dfg8qIzBAaM.jpg",
+            "alt": "Have an AI-powered product idea? It’s time to bring it to life!",
+            "category": "Announcements"
+        },
+        {
+            "id": 15,
+            "link": "https://www.instagram.com/p/DfR7PyzifCU/",
+            "image": "/feeds/ig-DfR7PyzifCU.jpg",
+            "alt": "The wait is finally over! ⭐️",
+            "category": "Announcements"
+        },
+        {
+            "id": 14,
+            "link": "https://www.instagram.com/p/DejAINQI2Xi/",
+            "image": "/feeds/ig-DejAINQI2Xi.jpg",
+            "alt": "🚀 INTRODUCING OUR JUDGE — VANSH TRIPATHI! 🌌",
+            "category": "Mentorship"
+        },
+        {
+            "id": 13,
+            "link": "https://www.instagram.com/p/DehK5dejkk7/",
+            "image": "/feeds/ig-DehK5dejkk7.jpg",
+            "alt": "JUDGE ANNOUNCEMENT 📢",
+            "category": "Announcements"
+        },
+        {
+            "id": 12,
+            "link": "https://www.instagram.com/p/DehKxBKDnUj/",
+            "image": "/feeds/ig-DehKxBKDnUj.jpg",
+            "alt": "JUDGE ANNOUNCEMENT 📢",
+            "category": "Announcements"
+        },
+        {
+            "id": 11,
+            "link": "https://www.instagram.com/p/Deeq9x_pIoN/",
+            "image": "/feeds/ig-Deeq9x_pIoN.jpg",
+            "alt": "The countdown is almost over, and the momentum is real. Shunya by GDG NSUT is ju",
+            "category": "Announcements"
+        },
+        {
+            "id": 10,
+            "link": "https://www.instagram.com/p/DeefK71JO66/",
+            "image": "/feeds/ig-DeefK71JO66.jpg",
+            "alt": "✨ The countdown is officially ON! 🚀Just 2 DAYS stand between you and the ultima",
+            "category": "Announcements"
+        },
+        {
+            "id": 9,
+            "link": "https://www.instagram.com/p/DeeeOFFTyQI/",
+            "image": "/feeds/ig-DeeeOFFTyQI.jpg",
+            "alt": "Clear your plans for the day because we are back! Grab your friends, find a spot",
+            "category": "Announcements"
+        },
+        {
+            "id": 8,
+            "link": "https://www.instagram.com/p/DecgjS8Txv0/",
+            "image": "/feeds/ig-DecgjS8Txv0.jpg",
+            "alt": "Shunya powered by unstop",
+            "category": "Announcements"
+        },
+        {
+            "id": 7,
+            "link": "https://www.instagram.com/p/DeZWbj5zFHB/",
+            "image": "/feeds/ig-DeZWbj5zFHB.jpg",
+            "alt": "3 DAYS TO GOO‼️",
+            "category": "Announcements"
+        },
+        {
             "id": 1,
             "link": "https://www.instagram.com/p/DSP0eG5iRnu/",
             "image": "/feeds/big-reveal.png",

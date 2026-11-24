@@ -1,6 +1,278 @@
 {
   "events": [
     {
+      "image": "/events/gdg-shunya-2026.png",
+      "time": "10:00 AM",
+      "date": "16 OCT",
+      "title": "Shunya 2026",
+      "description": "Shunya ’26, hosted by Google Developers Group NSUT, is a premier tech festival themed “SYMBIOSIS,” exploring how nature and technology can sustain…",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-10-16T04:30:00Z",
+      "url": "https://gdg.community.dev/e/m5p4g6/"
+    },
+    {
+      "image": "/events/gdg-exploring-linked-lists-in-data-structures.png",
+      "time": "9:00 PM",
+      "date": "22 MAR",
+      "title": "Exploring Linked Lists in Data Structures",
+      "description": "What if you could master the building blocks of efficient data management?Get ready to dive behind the scenes with DSA m...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-03-22T15:30:00Z",
+      "url": "https://gdg.community.dev/e/mzp9fv/"
+    },
+    {
+      "image": "/events/gdg-exploring-large-language-models-llm-s.png",
+      "time": "8:00 PM",
+      "date": "22 MAR",
+      "title": "Exploring Large Language Models (LLM's)",
+      "description": "What if machines could understand and talk just like humans?Get ready to dive behind the scenes with ML Department mento...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-03-22T14:30:00Z",
+      "url": "https://gdg.community.dev/e/mvv33m/"
+    },
+    {
+      "image": "/events/gdg-neural-networks-and-computer-vision.png",
+      "time": "9:00 PM",
+      "date": "21 MAR",
+      "title": "Neural Networks and Computer Vision",
+      "description": "How does your phone recognise faces, solve difficult math problems, give you styling recommendations, or understand what...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-03-21T15:30:00Z",
+      "url": "https://gdg.community.dev/e/mj3hkn/"
+    },
+    {
+      "image": "/events/gdg-prompt-to-play-building-an-ai-powered-game-engine-frontend.png",
+      "time": "8:00 PM",
+      "date": "21 MAR",
+      "title": "Prompt to Play: Building an AI-Powered Game engine (frontend)",
+      "description": "Step into the future of gaming and AI.Join Web Development mentor Roshan Sharma for a hands-on workshop, organised by GD...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-03-21T14:30:00Z",
+      "url": "https://gdg.community.dev/e/m9vhcp/"
+    },
+    {
+      "image": "/events/gdg-exploring-arrays-two-pointer-techniques-for-problem-solving.png",
+      "time": "10:00 PM",
+      "date": "20 MAR",
+      "title": "Exploring Arrays & Two-Pointer Techniques for Problem Solving",
+      "description": "What if you had a clear roadmap to crack your dream tech interview?Get ready to dive behind the scenes with DSA mentor B...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-03-20T16:30:00Z",
+      "url": "https://gdg.community.dev/e/m43n6e/"
+    },
+    {
+      "image": "/events/gdg-prompt-to-play-building-an-ai-powered-game-generator.png",
+      "time": "9:00 PM",
+      "date": "20 MAR",
+      "title": "Prompt to Play: Building an AI powered game generator",
+      "description": "What if a simple prompt could turn into a fully playable game? Get ready to dive behind the scenes with Web Development ...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-03-20T15:30:00Z",
+      "url": "https://gdg.community.dev/e/mpgx7k/"
+    },
+    {
+      "image": "/events/gdg-introduction-to-machine-learning.png",
+      "time": "9:00 PM",
+      "date": "18 MAR",
+      "title": "Introduction to Machine Learning",
+      "description": "Ever wondered how machines can analyze data and make smart decisions on their own?Join Dev mentor Armaan Bawa for an int...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-03-18T15:30:00Z",
+      "url": "https://gdg.community.dev/e/m5uz58/"
+    },
+    {
+      "image": "/events/gdg-ui-ux-workshop.png",
+      "time": "8:00 PM",
+      "date": "18 MAR",
+      "title": "UI/UX Workshop",
+      "description": "Ever thought why do some apps/websites feel so smooth and satisfying to use, while others feel confusing and frustrating...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-03-18T14:30:00Z",
+      "url": "https://gdg.community.dev/e/mreq9n/"
+    },
+    {
+      "image": "/events/gdg-blackbox-ai-avinya-26.png",
+      "time": "10:00 AM",
+      "date": "18 MAR",
+      "title": "BLACKBOX.AI | AVINYA'26",
+      "description": "BLACKBOX.AI is a high-intensity competitive challenge where participants attempt to reverse-engineer a hidden AI system ...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-03-18T04:30:00Z",
+      "url": "https://gdg.community.dev/e/mrzpku/"
+    },
+    {
+      "image": "/events/gdg-one-line-one-shot-innovision-25.jpg",
+      "time": "10:00 AM",
+      "date": "17 MAR",
+      "title": "One Line One Shot | INNOVISION'25",
+      "description": "GDG NSUT organises “One Line One Shot” as a part of Innovision, the annual technical festival of NSUT. The event aims to...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2026-03-17T04:30:00Z",
+      "url": "https://gdg.community.dev/e/mwpzdn/"
+    },
+    {
+      "image": "/events/gdg-lingoquest.jpg",
+      "time": "10:30 AM",
+      "date": "12 SEPT",
+      "title": "LingoQuest",
+      "description": "At LingoQuest, you’ll:Crack logic puzzles that demand quick thinkingDecode keywords hidden across intricate patternsColl...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2025-09-12T05:00:00Z",
+      "url": "https://gdg.community.dev/e/mvyvts/"
+    },
+    {
+      "image": "/events/gdg-shunya.jpg",
+      "time": "10:00 AM",
+      "date": "12 SEPT",
+      "title": "Shunya",
+      "description": "Shunya: Where Ideas BeginWhat if the future of technology wasn’t imagined in labs, but built right here, by students, dr...",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2025-09-12T04:30:00Z",
+      "url": "https://gdg.community.dev/e/mju9v5/"
+    },
+    {
+      "image": "/events/gdg-ai-unplugged-building-smart-solutions-without-code.png",
+      "time": "8:00 PM",
+      "date": "13 MAY",
+      "title": "AI Unplugged: Building Smart Solutions Without Code",
+      "description": "Join GDSC NSUT for AI Unplugged, a no-code workshop where you'll learn to build and deploy AI models using beginner-friendly tools—no coding…",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2025-05-13T14:30:00Z",
+      "url": "https://gdg.community.dev/e/mrecan/"
+    },
+    {
+      "image": "/events/gdg-gdsc-tech-bootcamp.jpg",
+      "time": "9:00 PM",
+      "date": "31 JAN",
+      "title": "GDSC Tech Bootcamp",
+      "description": "Join GDSC NSUT's exclusive bootcamps on Data Structures, Machine Learning, and Web Development! From conquering DSA fears to exploring AI and…",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2025-01-31T15:30:00Z",
+      "url": "https://gdg.community.dev/e/mnzmcd/"
+    },
+    {
+      "image": "/events/gdg-tech-winter-break-netaji-subhas-university-of-technology-delhi-india.png",
+      "time": "10:00 PM",
+      "date": "23 DEC",
+      "title": "Tech Winter Break Netaji Subhas University of Technology - Delhi, India",
+      "description": "Dive into the world of Tech this winter break with expert-led sessions",
+      "location": "NSUT, Delhi",
+      "eventType": "Event",
+      "socialLinks": {
+        "instagram": "https://instagram.com/gdgnsut",
+        "github": "https://github.com/GDSC-NSUT",
+        "linkedin": "https://www.linkedin.com/company/gdgnsut/",
+        "discord": "https://discord.gg/WtqbaUzgR"
+      },
+      "startDate": "2024-12-23T16:30:00Z",
+      "url": "https://gdg.community.dev/e/m2twvw/"
+    },
+    {
       "image": "/events/shunya.png",
       "time": "4:00 PM",
       "date": "12 SEP",

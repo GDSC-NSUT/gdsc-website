@@ -1,15 +1,17 @@
 "use client";
 import { Linkedin } from 'lucide-react';
 import Image from 'next/image';
+import { GitHubIcon } from '@/components/icons';
 
 interface TeamCardProps {
   name: string;
   role: string;
   imageSrc: string;
-  linkedinUrl: string;
+  linkedinUrl?: string;
+  githubUrl?: string;
 }
 
-export default function TeamCard({ name, role, imageSrc, linkedinUrl }: TeamCardProps) {
+export default function TeamCard({ name, role, imageSrc, linkedinUrl, githubUrl }: TeamCardProps) {
   return (
     <div className="flex flex-col items-center group w-full max-w-50">
       <div className="relative w-32 h-36 sm:w-40 sm:h-43 md:w-60 md:h-64 xl:w-80 xl:h-85 mb-4 flex items-center justify-center">
@@ -36,14 +38,29 @@ export default function TeamCard({ name, role, imageSrc, linkedinUrl }: TeamCard
           />
         </div>
 
-        {/* LinkedIn Button */}
-        <a
-          href={linkedinUrl}
-          target="_blank"
-          className="absolute bottom-2 right-2 bg-primary-yellow p-2 sm:p-4 rounded-full border-2 border-white shadow-lg z-20 scale-0 group-hover:scale-100 transition-transform duration-300 hover:bg-[#f4b400]"
-        >
-          <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" fill="black" strokeWidth={0} />
-        </a>
+        {/* Social buttons (only rendered when a link exists) */}
+        {githubUrl && (
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${name} on GitHub`}
+            className="absolute bottom-2 left-2 flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-[#181717] text-white border-2 border-white shadow-lg z-20 hover:scale-110 transition-transform duration-300 hover:bg-black"
+          >
+            <GitHubIcon className="w-5 h-5 sm:w-6 sm:h-6" />
+          </a>
+        )}
+        {linkedinUrl && (
+          <a
+            href={linkedinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${name} on LinkedIn`}
+            className="absolute bottom-2 right-2 flex items-center justify-center w-9 h-9 sm:w-11 sm:h-11 md:w-12 md:h-12 rounded-full bg-[#0A66C2] text-white border-2 border-white shadow-lg z-20 hover:scale-110 transition-transform duration-300 hover:bg-[#004182]"
+          >
+            <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" fill="white" strokeWidth={0} />
+          </a>
+        )}
       </div>
 
       <div className="text-center text-nowrap">
