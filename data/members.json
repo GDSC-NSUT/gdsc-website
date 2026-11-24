@@ -1734,5 +1734,47 @@
     "github": "",
     "bio": "Hey! I’m Suhanee, a first-year B.Des student from Odisha. I love animating, designing and experimenting with different ideas!",
     "image": "teams/Suhanee_Sahoo.jpg"
+  },
+  {
+    "timestamp": "11/24/2026 13:11:32",
+    "name": "Kajal Kumari",
+    "department": "Production",
+    "position": "Member",
+    "corePosition": "",
+    "rollNumber": "2026UEC2571",
+    "nsutEmail": "kajal.kumari.ug26@nsut.ac.in",
+    "personalEmail": "kajal61357@gmail.com",
+    "linkedin": "",
+    "github": "",
+    "bio": "People say first impressions matter, so I hope mine comes with a little sparkle! A little ambition, a little imagination, a lot of determination and a personality that keeps evolving. I love learning new things, meeting new people and making ordinary moments extraordinary. I'm not perfect, but I'm definitely one of a kind!",
+    "image": "teams/Kajal_Kumari.jpg"
+  },
+  {
+    "timestamp": "11/24/2026 13:22:06",
+    "name": "Arif Mustafa Khan",
+    "department": "Operations",
+    "position": "Member",
+    "corePosition": "",
+    "rollNumber": "2025UEA6507",
+    "nsutEmail": "Arif.khan.ug25@nsut.ac.in",
+    "personalEmail": "arifkhan008368@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/arif-mustafa-khan",
+    "github": "",
+    "bio": "Hey All, I'm just a Engineering undergrad who loves turning ideas into working solutions. Whether it's solving algorithmic problems in C++ or building community-focused tech, I thrive on collaboration, hackathons, and learning by doing. Always excited to build something meaningful together.",
+    "image": "teams/Arif_Mustafa_Khan.jpg"
+  },
+  {
+    "timestamp": "11/24/2026 13:22:27",
+    "name": "Krish Kushwaha",
+    "department": "Development",
+    "position": "Member",
+    "corePosition": "",
+    "rollNumber": "2026UGI7263",
+    "nsutEmail": "krish.kushwah.ug26@nsut.ac.in",
+    "personalEmail": "krishkushwaha99999@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/krish-kushwaha-a1ba5b297",
+    "github": "https://github.com/ImpacTusdevloper",
+    "bio": "I make games in Unity and C#, and I build my own assets in Blender and GIMP. I've started around 30 projects and finished a handful, which are up on itch.io. Most of my work is gameplay mechanics and small prototypes.",
+    "image": "teams/Krish_Kushwaha.jpg"
   }
 ]
